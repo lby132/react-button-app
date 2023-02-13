@@ -9,7 +9,6 @@ test('renders learn react link', () => {
 
 test('minus button has correct text', () => {
   render(<App/>);
-
   const buttonElement = screen.getByTestId("minus-button");
   expect(buttonElement).toHaveTextContent("-");
 });
@@ -33,6 +32,7 @@ test('on/off button has blue color', () => {
   const buttonElement = screen.getByTestId("on/off-button");
   expect(buttonElement).toHaveStyle({backgroundColor: 'blue'});
 });
+
 
 test("Prevent the -,+ button from being pressed when the on/off button is cliecked", () => {
   render(<App />);
